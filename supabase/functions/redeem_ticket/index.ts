@@ -10,8 +10,8 @@
  * Notes:
  * - For your current seed data, `code_hash` values are "demo_hash_1" etc
  *   This function supports BOTH:
- *   (1) direct match of `code` to `code_hash`  ✅ works now
- *   (2) sha256(code) match to `code_hash`     ✅ works if you later store real hashes
+ *   (1) direct match of `code` to `code_hash`  (works now)
+ *   (2) sha256(code) match to `code_hash`     (works if you later store real hashes)
  */
 
 import { createClient } from "npm:@supabase/supabase-js@2.49.1";

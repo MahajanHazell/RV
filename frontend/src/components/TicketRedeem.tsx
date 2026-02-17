@@ -72,7 +72,7 @@ export default function TicketRedeem({ onSuccess }: TicketRedeemProps) {
     <div className="ticket-redeem">
       <div className="card card-lg">
         <div className="brand">
-          <div className="brand-mark">💬</div>
+          <div className="brand-mark">→</div>
           <div>
             <h2 className="title">Assistant Access</h2>
             <p className="subtitle">Pick a museum and enter your access code or even your BILLS ticket code (yes!).</p>

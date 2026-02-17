@@ -1,6 +1,6 @@
 # Deploy to Netlify - Quick Guide
 
-## ✅ Your frontend is built and ready!
+## Your frontend is built and ready
 
 ## Option 1: Deploy via Netlify UI (Easiest - 3 minutes)
 
@@ -28,7 +28,7 @@
 2. Click **"Trigger deploy"** → **"Deploy site"**
 3. Wait ~1 minute
 
-### Step 5: Done! 🎉
+### Step 5: Done
 You'll get a URL like: `https://random-name-12345.netlify.app`
 
 ---
@@ -83,12 +83,12 @@ netlify deploy --prod
 
 ## 🎯 Quick Summary
 
-**Backend Status:** ✅ Deployed to Supabase
+**Backend Status:** Deployed to Supabase
 - Edge Functions: `redeem_ticket`, `rag_chat`, `ingest_seed`, `chat`
 - Database: Migrations applied, data seeded
 - Environment variables: Set
 
-**Frontend Status:** ✅ Built, ready to deploy
+**Frontend Status:** Built, ready to deploy
 - Build folder: `frontend/dist/`
 - Zip file: `frontend-dist.zip` (ready to upload)
 

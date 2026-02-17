@@ -422,7 +422,7 @@ async function handler(req: Request): Promise<Response> {
 
     const rows = (matches ?? []) as MatchRow[];
 
-    // ✅ Similarity gating (normalize similarity FIRST)
+    // Similarity gating (normalize similarity first)
     const normalized = rows
       .map((r) => ({
         ...r,

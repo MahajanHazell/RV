@@ -16,7 +16,7 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="topbar-inner">
-          <div className="topbar-title">🏛️ Exhibit AI </div>
+          <div className="topbar-title">Exhibit AI</div>
           <div className="topbar-sub">Ask questions. Get cited answers.</div>
         </div>
       </header>

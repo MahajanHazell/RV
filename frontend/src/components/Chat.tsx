@@ -29,7 +29,7 @@ export default function Chat({ museumId }: ChatProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
-  // Only include prompts we *actually* answer well with your current ingestion.
+  // Only include prompts that work well with the current data
   const suggestions = useMemo(
     () => [
       "What are the museum hours and admission prices?",
@@ -92,7 +92,7 @@ export default function Chat({ museumId }: ChatProps) {
     <div className="chat">
       <div className="chat-header">
         <div className="brand brand-inline">
-          <div className="brand-mark">🖼️</div>
+          <div className="brand-mark">→</div>
           <div>
             <h2 className="title">Buffalo AKG Asisstant</h2>
             <p className="subtitle">Ask about visiting, hours, admission, parking, exhibits, and events.</p>

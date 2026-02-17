@@ -30,7 +30,7 @@ export default function CitationList({ sources }: { sources: Source[] }) {
     }
   };
 
-  // ✅ Deduplicate by source_url and keep the highest similarity per URL
+  // Deduplicate by source_url and keep the highest similarity per URL
   const deduped = Array.from(
     sources.reduce((map, s) => {
       const key = s.source_url ?? `no_url:${s.id}`;
@@ -42,7 +42,7 @@ export default function CitationList({ sources }: { sources: Source[] }) {
     }, new Map<string, Source>()).values()
   )
     .sort((a, b) => b.similarity - a.similarity)
-    .slice(0, 1); // ✅ show only top 2 sources (change to 1 if you want)
+    .slice(0, 1); // show only top source
 
   return (
     <div className="citation-list">

@@ -134,21 +134,21 @@ Save this as `deploy.sh`:
 #!/bin/bash
 set -e
 
-echo "🚀 Starting deployment..."
+echo "Starting deployment..."
 
-echo "📦 Step 1: Linking Supabase project..."
+echo "Step 1: Linking Supabase project..."
 supabase link --project-ref njcwzwgjfqfirfnsuvhu
 
-echo "🗄️ Step 2: Deploying database migrations..."
+echo "Step 2: Deploying database migrations..."
 supabase db push
 
-echo "⚡ Step 3: Deploying Edge Functions..."
+echo "Step 3: Deploying Edge Functions..."
 supabase functions deploy redeem_ticket
 supabase functions deploy rag_chat
 supabase functions deploy ingest_seed
 
-echo "✅ Deployment complete!"
-echo "📝 Next steps:"
+echo "Deployment complete!"
+echo "Next steps:"
 echo "   1. Set environment variables for Edge Functions"
 echo "   2. Generate embeddings using ingest_seed function"
 echo "   3. Deploy frontend to Vercel/Netlify"
